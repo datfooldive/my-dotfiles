@@ -41,6 +41,9 @@ dotfiles:
   f_settings.json:
     src: config/Code/User/settings.json
     dst: ~/.config/Code/User/settings.json
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
 profiles:
   archlinux:
     dotfiles:
@@ -55,3 +58,4 @@ profiles:
     - f_style.css
     - f_tofi_config
     - f_settings.json
+    - d_nvim

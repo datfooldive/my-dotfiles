@@ -1,0 +1,53 @@
+config:
+  backup: true
+  banner: true
+  create: true
+  dotpath: dotfiles
+  keepdot: false
+  link_dotfile_default: nolink
+  link_on_import: nolink
+  longkey: false
+dotfiles:
+  f_config:
+    src: config/sway/config
+    dst: ~/.config/sway/config
+  d_scripts:
+    src: scripts
+    dst: ~/.scripts
+  d_waybar:
+    src: config/waybar
+    dst: ~/.config/waybar
+  d_wofi:
+    src: config/wofi
+    dst: ~/.config/wofi
+  f_mako_config:
+    src: config/mako/config
+    dst: ~/.config/mako/config
+  f_foot.ini:
+    src: config/foot/foot.ini
+    dst: ~/.config/foot/foot.ini
+  f_cava_config:
+    src: config/cava/config
+    dst: ~/.config/cava/config
+  d_wallpapers:
+    src: local/share/wallpapers
+    dst: ~/.local/share/wallpapers
+  f_style.css:
+    src: config/wlogout/style.css
+    dst: ~/.config/wlogout/style.css
+  f_tofi_config:
+    src: config/tofi/config
+    dst: ~/.config/tofi/config
+profiles:
+  archlinux:
+    dotfiles:
+    - f_config
+    - d_scripts
+    - d_waybar
+    - d_wofi
+    - f_mako_config
+    - f_foot.ini
+    - f_cava_config
+    - d_wallpapers
+    - f_style.css
+    - f_tofi_config

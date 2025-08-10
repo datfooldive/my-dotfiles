@@ -1,0 +1,9 @@
+font=Aporetic Serif bold 12
+background-color=#1a1a1a
+text-color=#e4e4e4
+border-size=1
+border-color=#303536
+border-radius=4
+icons=1
+text-alignment=left
+default-timeout=5000

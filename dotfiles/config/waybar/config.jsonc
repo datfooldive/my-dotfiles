@@ -1,0 +1,113 @@
+{
+  "layer": "bottom",
+  "position": "bottom",
+  "mode": "dock",
+  "modules-left": [
+    "custom/app_launcher",
+    "sway/workspaces",
+    "sway/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "custom/music",
+    "tray",
+    "network",
+    "battery",
+    "pulseaudio",
+    "custom/power"
+  ],
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "tooltip": false,
+    "format": "{icon}",
+    "persistent-workspaces": {
+      "1": "[]",
+      "2": "[]",
+      "3": "[]",
+      "4": "[]",
+      "5": "[]"
+    },
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十"
+    }
+  },
+  "sway/window": {
+    "format": "{title}",
+    "tooltip": false,
+    "max-length": 40
+  },
+  "tray": {
+    "spacing": 10,
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%I:%M %p - %a, %d %b %Y}",
+    "tooltip": false
+  },
+  "network": {
+    "format-wifi": "󰤢  {bandwidthDownBits}",
+    "format-ethernet": "󰤢  {bandwidthDownBits}",
+    "format-disconnected": "󰤠  No Network",
+    "interval": 5,
+    "tooltip": false
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-icons": [
+      "",
+      "",
+      " "
+    ],
+    "nospacing": 1,
+    "format-muted": " ",
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "interval": 5,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    },
+    "format-icons": [
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "tooltip": false
+  },
+  "custom/power": {
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": [
+      ""
+    ],
+    "on-click": "wlogout"
+  },
+  "custom/app_launcher": {
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": [
+      ""
+    ],
+    "on-click": "wofi --show drun --allow-images --columns 3"
+  }
+}

@@ -1,0 +1,16 @@
+font= Aporetic Serif
+font-size=12
+background-color=#222222
+outline-width=0
+outline-color=#303536
+border-width=2
+border-color=#222222
+text-color=#ffffff
+prompt-text="> "
+prompt-padding=4
+selection-color=#aaaaaa
+selection-match-color=#ffffff
+selection-background-color=#303536
+corner-radius=0
+width=600
+height=400

@@ -1,0 +1,65 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: "Iosevka", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0;
+}
+
+window#waybar {
+  background: #222222;
+  border: none;
+  color: #ffffff;
+}
+
+#custom-music,
+#cpu,
+#window,
+#battery,
+#network,
+#clock,
+#tray,
+#pulseaudio,
+#custom-power,
+#custom-app_launcher,
+#workspaces {
+  margin: 4;
+  padding: 1px 4px;
+  background: rgba(34, 34, 34, 0.8);
+  border: none;
+  color: #ffffff;
+}
+
+#workspaces button {
+  all: initial;
+  min-width: 0;
+  box-shadow: inset 0 -3px transparent;
+  padding: 2px 2px;
+  color: #aaaaaa;
+}
+
+#window:hover {
+  color: #ffffff;
+}
+
+#workspaces button.focused {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  color: #ff0000;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  color: #ff0000;
+}
+
+#custom-power {
+  padding-right: 8px;
+}
+

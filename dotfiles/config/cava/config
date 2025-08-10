@@ -1,0 +1,14 @@
+[color]
+background = '#1a1a1a'
+gradient = 1
+gradient_count = 8
+
+# Blue to Dark Blue Gradient
+gradient_color_1 = '#89ddff'
+gradient_color_2 = '#74c7ec'
+gradient_color_3 = '#68b5e8'
+gradient_color_4 = '#5a9ee6'
+gradient_color_5 = '#4a8ee3'
+gradient_color_6 = '#377bdc'
+gradient_color_7 = '#245cc4'
+gradient_color_8 = '#0f4c81'

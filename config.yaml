@@ -38,6 +38,9 @@ dotfiles:
   f_tofi_config:
     src: config/tofi/config
     dst: ~/.config/tofi/config
+  f_settings.json:
+    src: config/Code/User/settings.json
+    dst: ~/.config/Code/User/settings.json
 profiles:
   archlinux:
     dotfiles:
@@ -51,3 +54,4 @@ profiles:
     - d_wallpapers
     - f_style.css
     - f_tofi_config
+    - f_settings.json

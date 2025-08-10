@@ -1,0 +1,63 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "editor.fontFamily": " Aporetic Sans Mono, 'Droid Sans Mono', 'monospace', monospace",
+  "editor.lineHeight": 1.6,
+  "workbench.activityBar.location": "default",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.statusBar.visible": true,
+  "workbench.tips.enabled": false,
+  "breadcrumbs.enabled": false,
+  "symbols.hidesExplorerArrows": true,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 16,
+  "explorer.compactFolders": false,
+  "workbench.sideBar.location": "right",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "solid",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "on",
+  "zenMode.fullScreen": true,
+  "window.titleBarStyle": "native",
+  "chat.commandCenter.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "editor.fontLigatures": true,
+  "workbench.iconTheme": "symbols",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.productIconTheme": "jetbrains-product-icon-theme",
+  "go.alternateTools": {
+    "go": "/home/dwikyrza/.local/share/mise/installs/go/1.24.4/bin/go"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "editor.mouseWheelZoom": true
+}

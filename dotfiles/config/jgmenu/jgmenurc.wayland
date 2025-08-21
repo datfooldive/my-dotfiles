@@ -1,0 +1,13 @@
+stay_alive = 0
+position_mode = fixed
+menu_margin_y = 36
+terminal_exec = i3-sensible-terminal
+font = Iosevka Bold
+icon_size = 22
+color_menu_border = #1a1a1a 0
+color_menu_bg = #222222
+color_norm_bg = #1a1a1a 0
+color_norm_fg = #d0d0d0
+color_sel_bg = #3a3a3a
+color_sel_fg = #e0e0e0
+color_sep_fg = #5a5a5a

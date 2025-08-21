@@ -3,7 +3,7 @@
   border-radius: 0;
   min-height: 0;
   font-family: "Iosevka", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   padding: 0;
 }
@@ -62,4 +62,3 @@ window#waybar {
 #custom-power {
   padding-right: 8px;
 }
-

@@ -44,6 +44,18 @@ dotfiles:
   d_nvim:
     src: config/nvim
     dst: ~/.config/nvim
+  d_i3:
+    src: config/i3
+    dst: ~/.config/i3
+  d_i3status:
+    src: config/i3status
+    dst: ~/.config/i3status
+  d_i3status-rust:
+    src: config/i3status-rust
+    dst: ~/.config/i3status-rust
+  d_jgmenu:
+    src: config/jgmenu
+    dst: ~/.config/jgmenu
 profiles:
   archlinux:
     dotfiles:
@@ -59,3 +71,7 @@ profiles:
     - f_tofi_config
     - f_settings.json
     - d_nvim
+    - d_i3
+    - d_i3status
+    - d_i3status-rust
+    - d_jgmenu

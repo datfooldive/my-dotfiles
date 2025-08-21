@@ -108,6 +108,6 @@
     "format-icons": [
       ""
     ],
-    "on-click": "wofi --show drun --allow-images --columns 3"
+    "on-click": "jgmenu --config-file=.config/jgmenu/jgmenurc.wayland"
   }
 }

@@ -1,0 +1,43 @@
+general {
+        output_format = "i3bar"
+        colors = true
+        interval = 5
+}
+
+order += "wireless wlan0"
+order += "battery all"
+order += "tztime local_date"
+order += "tztime local_time"
+order += "volume master"
+
+wireless wlan0 {
+        format_up = "W: (%quality at %essid, %bitrate) %ip"
+        format_down = "W: down"
+}
+
+battery all {
+        format = "%status %percentage %remaining %emptytime"
+        format_down = "No battery"
+        status_chr = "CHR"
+        status_bat = "BAT"
+        status_unk = "UNK"
+        status_full = "FULL"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+tztime local_date {
+        format = "%Y-%m-%d"
+}
+
+tztime local_time {
+        format = "%I:%M %p"
+}
+
+volume master {
+        format = "Vol: %volume"
+        format_muted = "Vol: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+FILENAME="screenshot-$(date +%F-%H-%M-%S).png"
+OUTPUT_PATH="$HOME/Pictures/Screenshots/$FILENAME"
+
+mkdir -p "$HOME/Pictures/Screenshots"
+
+if [[ $1 == "--clipboard" ]]; then
+    if scrot -s -q 100 /tmp/screenshot.png && xclip -selection clipboard -t image/png -i /tmp/screenshot.png; then
+        notify-send "Screenshot copied to clipboard."
+        rm /tmp/screenshot.png
+    else
+        notify-send "Failed to take screenshot."
+    fi
+else
+    if scrot -s -q 100 "$OUTPUT_PATH"; then
+        notify-send "Screenshot saved: $OUTPUT_PATH"
+    else
+        notify-send "Failed to take screenshot."
+    fi
+fi
+

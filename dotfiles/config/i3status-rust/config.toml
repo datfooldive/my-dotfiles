@@ -1,0 +1,51 @@
+icons_format = "{icon}"
+
+[theme]
+theme = "native"
+
+[icons.overrides]
+bat_charging = "\U000f0084"
+bat_not_available = "\U000f0091"
+bat = [
+    "\U000f007a",
+    "\U000f007b",
+    "\U000f007c",
+    "\U000f007d",
+    "\U000f007e",
+    "\U000f007f",
+    "\U000f0080",
+    "\U000f0081",
+    "\U000f0082",
+    "\U000f0079",
+]
+
+[[block]]
+block = "time"
+interval = 5
+format = " $timestamp.datetime(f:'%a %d/%m %R') "
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "net"
+format = " $icon {$signal_strength $ssid} "
+interval = 5
+
+[[block]]
+block = "battery"
+interval = 30
+format = " $icon $percentage "
+full_threshold = 100
+
+[[block]]
+block = "custom"
+command = "echo ''"
+interval = "once"
+
+[[block.click]]
+button = "left"
+cmd = "jgmenu_run"

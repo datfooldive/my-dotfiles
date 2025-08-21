@@ -28,6 +28,7 @@ blur_radius 1
 
 bar {
   swaybar_command waybar
+  height 24
 }
 
 set $mod Mod4
